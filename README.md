@@ -7,7 +7,7 @@ Robot learning researcher working on bimanual dexterous manipulation: two arms a
 and ROS 2 deployment on the real robot. Ph.D. candidate at Kyung Hee University (degree expected Feb 2027),
 open to research scientist and research engineer roles in robot learning.
 
-[Website](https://ismael-esp.github.io) · [CV (PDF)](https://ismael-esp.github.io/assets/Espinoza_Ismael_CV.pdf) · [Google Scholar](https://scholar.google.com/citations?user=3S9BoVAAAAAJ)
+[Website](https://ismael-esp.github.io) · [Google Scholar](https://scholar.google.com/citations?user=3S9BoVAAAAAJ)
 
 ---
 
