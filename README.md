@@ -22,7 +22,8 @@ with no training on real-robot data. One robot, two configurations: table-mounte
 - **Real robot, direct transfer:** four long-horizon tasks (three handovers and bimanual sweeping) succeeded in
   18 to 30 of 35 trials each; the same architecture trained by imitation alone reached at most 13 of 35.
 - **Real robot, RGB only:** distilled into an RGB-only student (TMAD, under review), the policy reached 72 to 84%
-  success on four tasks (mean of 3 runs × 25 trials).
+  success on four tasks (mean of three evaluation runs per task; Pick-and-Place 72.0% and Tube Handover 84.0%
+  over three runs of 25 trials, as in the TMAD paper).
 
 The policy-training code of the dissertation is not public. The projects below are.
 
@@ -41,8 +42,9 @@ How the pieces fit:
 
 ```mermaid
 flowchart LR
-  T1["quest3-dexterous-teleop<br/>(VR teleop, simulation)"] -- demonstrations --> IL["policy learning<br/>(dissertation)"]
-  T2["allegro-hand-retargeting<br/>(glove teleop, real robot)"] --> D
+  T2["allegro-hand-retargeting<br/>(glove teleop)"] -- "demonstrations in the twin" --> IL["policy learning<br/>(dissertation)"]
+  T1["quest3-dexterous-teleop<br/>(VR teleop, simulation)"] -.->|"alternative recorder"| IL
+  T2 --> D
   P["foundationpose-ros2-tracker<br/>(6D object pose)"] --> G["dexterous-pick-and-place<br/>(grasp + motion)"]
   G --> D["dual-arm-allegro-ros2<br/>(drivers: 2 arms, 2 hands, cameras)"]
   IL --> D
