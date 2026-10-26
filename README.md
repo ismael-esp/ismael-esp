@@ -21,7 +21,7 @@ with no training on real-robot data. One robot, two configurations: table-mounte
   on five long-horizon benchmark tasks, against 59.0% for the best transformer baseline.
 - **Real robot, direct transfer:** four long-horizon tasks (three handovers and bimanual sweeping) succeeded in
   18 to 30 of 35 trials each; the same architecture trained by imitation alone reached at most 13 of 35.
-- **Real robot, RGB only:** distilled into an RGB-only student (TMAD, under review), the policy reached 72 to 84%
+- **Real robot, RGB only:** distilled into an RGB-only student (TMAD, ICCR 2026), the policy reached 72 to 84%
   success on four tasks (mean of three evaluation runs per task; Pick-and-Place 72.0% and Tube Handover 84.0%
   over three runs of 25 trials, as in the TMAD paper).
 
@@ -62,7 +62,7 @@ flowchart LR
 - J.-H. Oh, D. Jung, **I. Espinoza**, et al. Multi-modal affordance planner with temporal-context action policy
   for long-horizon bimanual robot manipulation. IEEE ICRA 2026. [doi](https://doi.org/10.1109/ICRA57385.2026.11695814)
 - S. Park, **I. Espinoza**, et al. TMAD: Temporal multi-agent distillation for bimanual long-horizon
-  manipulation. Under review, 2026.
+  manipulation. International Conference on Control and Robotics (ICCR), Tokyo, 2026, accepted.
 
 Patents: Korean Patent 10-2943203 (granted 2026) and two Korean patent applications pending.
 Full list on [Google Scholar](https://scholar.google.com/citations?user=3S9BoVAAAAAJ) and the [website](https://ismael-esp.github.io/#publications).
