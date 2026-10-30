@@ -32,7 +32,7 @@ The policy-training code of the dissertation is not public. The projects below a
 | Project | What it is | Result |
 |---|---|---|
 | [dexterous-pick-and-place](https://github.com/ismael-esp/dexterous-pick-and-place) | FoundationPose 6D perception + BODex grasp synthesis for Allegro hands on the dual-arm UR3 / UR3e cell; one code path for Isaac Lab and the real robot | **Real robot (right arm):** 94/100 executed trials over 10 objects. **Isaac Lab (both arms):** 180/200 |
-| [robotic-origami-challenge](https://github.com/ismael-esp/robotic-origami-challenge) | FoldingACT: vision + tactile action-chunking transformer (DINOv3, Sparsh) for bimanual paper folding with two 22-joint hands, IROS 2026 Robotic Origami Challenge; 398 GB LeRobot dataset, ten gated versions, Zenoh inference service | **Real robot (organizers'):** no fold completed; the failure is root-caused in the write-up. The fixed v10 is not tested on hardware |
+| [robotic-origami-challenge](https://github.com/ismael-esp/robotic-origami-challenge) | FoldingACT: vision + tactile action-chunking transformer (DINOv3, Sparsh) for bimanual paper folding with two 22-joint hands, IROS 2026 Robotic Origami Challenge; 398 GB LeRobot dataset, ten gated versions, Zenoh inference service | **Real robot (organizers', IROS 2026 venue):** the final v10 completed 2 of the 6 folds; Team PixelPaper placed 5th |
 | [foundationpose-ros2-tracker](https://github.com/ismael-esp/foundationpose-ros2-tracker) | Zero-shot 6D object tracking in ROS 2 from a mesh and an object name (YOLO-World, SAM 2, FoundationPose); CUDA patch for RTX 50xx (Blackwell) | **Real robot cell:** live tracking at about 3 to 5 Hz with the debug overlay; feeds the grasp planner |
 | [quest3-dexterous-teleop](https://github.com/ismael-esp/quest3-dexterous-teleop) | Meta Quest 3 hand-tracking teleoperation and demonstration recorder for the dual-arm cell in Isaac Lab | **Simulation.** 81 unit tests; finger-flexion agreement r = 0.91 to 0.98 (default profile, recorded episodes) |
 | [allegro-hand-retargeting](https://github.com/ismael-esp/allegro-hand-retargeting) | Two Manus gloves to two Allegro hands with learned retargeting (GeoRT fork) and a ROS 2 bridge | **Recorded glove sessions:** per-finger flexion agreement r = 0.87 to 0.97; 0.7 ms per hand |
@@ -53,14 +53,14 @@ flowchart LR
 #### Selected publications
 
 - J.-H. Oh\*, **I. Espinoza Jaramillo\***, D. Jung, T.-S. Kim. Bimanual long-horizon manipulation via
-  temporal-context transformer RL. IEEE Robotics and Automation Letters, 9(12), 2024, presented at IROS 2025.
+  temporal-context transformer RL. IEEE Robotics and Automation Letters, 9(12), 10898–10905, 2024, presented at IROS 2025.
   \*equal contribution. [doi](https://doi.org/10.1109/LRA.2024.3484167)
 - **I. Espinoza**, Y.-H. Choi, K. Lee, J.-H. Oh, K. J. Pahk, T.-S. Kim. A Real2Sim2Real transformer policy
-  system for bimanual R2R2H tasks. ACM/IEEE HRI 2026 Companion. [doi](https://doi.org/10.1145/3776734.3794489)
+  system for bimanual R2R2H tasks. ACM/IEEE HRI 2026 Companion, 716–720. [doi](https://doi.org/10.1145/3776734.3794489)
 - Y.-H. Choi, **I. Espinoza**, et al. A semi-humanoid Real2Sim2Real system for bimanual long-horizon
   manipulation. International Conference on Ubiquitous Robots (UR), 2026, in press.
 - J.-H. Oh, D. Jung, **I. Espinoza**, et al. Multi-modal affordance planner with temporal-context action policy
-  for long-horizon bimanual robot manipulation. IEEE ICRA 2026. [doi](https://doi.org/10.1109/ICRA57385.2026.11695814)
+  for long-horizon bimanual robot manipulation. IEEE ICRA 2026, 637–644. [doi](https://doi.org/10.1109/ICRA57385.2026.11695814)
 - S. Park, **I. Espinoza**, et al. TMAD: Temporal multi-agent distillation for bimanual long-horizon
   manipulation. International Conference on Control and Robotics (ICCR), Tokyo, 2026, accepted.
 
